@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng Cửu Chương</title>
+  <script>
+      document.write("<h2> Bảng Cửu Chương </h2>")
+    let data = "<table border='1' width='300' cellspacing='0' cellpadding='15'>"
+    for(let i = 1; i <= 10; i++){
+       data += "<tr>";
+      for(let j = 1; j <= 10; j++){
+        data += "<td>";
+        data += j + "x" + i + "=" + (i * j);
+        data += "</td>";
+      }
+      data += "</tr>";
+    }
+    data += "</table>";
+    document.write(data);
+  </script>
+</head>
+<body>
+
+</body>
+</html>

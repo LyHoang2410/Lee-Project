@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="number1" name="number1"><br/>
+
+<input type="text" id="number2" name="number2"><br/>
+
+<button onclick="check">check</button>
+
+</body>
+</html>
+<script>
+    function check() {
+        let number1 = document.getElementById("nb1").value;
+        let number2 = document.getElementById("nb2").value;
+
+        let multiplication = number1 * number2
+        document.write("'id=nb1'+'nb2'" + multiplication);
+    }
+</script>
