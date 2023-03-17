@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="BT-DoYouLoveMejs.js"></script>
+    <script>
+        function yesClick(){
+            alert("Yes, You are right. I love you too");
+        }
+        function noTouch(){
+            let x = Math.round(Math.random() * window.innerWidth);
+            let y = Math.round(Math.random() * window.innerHeight);
+            document.getElementById("cntno").style.left = x + 'px';
+            document.getElementById("cntno").style.top = y + 'px';
+        }
+    </script>
 </head>
 <body>
 <h1 style="position: absolute; left:500px; top:175px;">Do You Love Me?</h1>
