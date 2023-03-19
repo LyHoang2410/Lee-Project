@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
 </head>
 <body>
-<form action="">
-  <tr>
-    <td>
-      <lable for="Amount">Amount</lable><br>
-    </td>
-    <td>From currency</td>
-    <td>To currency</td>
-    <th></th>
-  </tr>
-  <tr>
-    <td>
-      <input type="text" id="Amount">
-    </td>
-    <td>
-      <select name="" id=""></select>
-    </td>
-    <td></td>
-    <td></td>
-  </tr>
-</form>
+<input type="text" id="money">
+<label for="from">From</label>
+<select id="from">
+  <option value="1">USD</option>
+  <option value="23000">VND</option>
+  <option value="100">NDT</option>
+</select>
+<label for="to">To</label>
+<select id="to">
+  <option value="1">USD</option>
+  <option value="23000">VND</option>
+  <option value="100">NDT</option>
+</select>
+<button onclick="changeMoney()">Convert</button>
+<h2 id="result"></h2>
 </body>
+<script>
+  function changeMoney() {
+    let money = document.getElementById("money").value
+    let from = document.getElementById("from").value
+    let to = document.getElementById("to").value
+    console.log(typeof money)
+    let result = money * to / from
+    document.getElementById("result").innerHTML = "Result: " + result
+  }
+</script>
 </html>
