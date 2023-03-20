@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="meter"></div>
+<div id="feet"></div>
+</body>
+<script>
+    function feettometer() {
+        return feet;
+    }
+    function metertofeet() {
+        return meter;
+    }
+    let meter = prompt("Enter your meter: ");
+    let feet = prompt("Enter your feet: ");
+    document.getElementById("meter").innerHTML = "Your meter is: " + (0.305 * feet)
+    document.getElementById("feet").innerHTML ="Your feet is: " + (3.279 * meter)
+    feettometer()
+    metertofeet()
+</script>
+</html>
