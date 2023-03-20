@@ -5,14 +5,29 @@
     <title>Title</title>
 </head>
 <body>
-
+<div id="add"></div>
 </body>
 <script>
-    let num = prompt();
-    console.log(num.toString());
-    console.log(myColor.join());
-    console.log(num.join(','));
+    let str = 'The Quick Brown Fox';
+    let upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let lower = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
 
-
+    for(let i = 0; i < str.length; i++)
+    {
+        if(upper.indexOf(str[i]) !== -1)
+        {
+            result.push(str[i].toLowerCase());
+        }
+        else if(lower.indexOf(str[i]) !== -1)
+        {
+            result.push(str[i].toUpperCase());
+        }
+        else
+        {
+            result.push(str[i]);
+        }
+    }
+    document.getElementById("add").innerHTML = result.join('')
 </script>
 </html>
